@@ -1,0 +1,51 @@
+
+.ac-container label {
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+
+    line-height: 33px;
+    font-size: 19px;
+    border: 1px solid red;
+}
+
+
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 13px;
+    top: 7px;
+
+}
+
+.ac-container input {
+    display: none;
+}
+
+.ac-container article {
+
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+}
+
+.ac-container input:checked ~ article {
+
+    border: 1px solid red;
+    height: 100px;
+}
+
+.ac-container article p {
+    color: black;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 5px;
+
+}

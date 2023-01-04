@@ -29,7 +29,6 @@
 }
 
 .ac-container article {
-
     overflow: hidden;
     height: 0px;
     position: relative;
@@ -39,7 +38,7 @@
 .ac-container input:checked ~ article {
 
     border: 1px solid red;
-    height: 100px;
+    height: fit-content;
 }
 
 .ac-container article p {
